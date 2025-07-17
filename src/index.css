@@ -1,0 +1,426 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  background: transparent;
+}
+
+textarea {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.full {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 200px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.card {
+  margin: 20px;
+}
+
+.top-logo {
+  position: absolute;
+  top: 0;
+  margin-top: 20px;
+}
+
+.top-logo h1 {
+  font-size: 1.6rem;
+  font-weight: 100;
+  text-align: center;
+  letter-spacing: 5px;
+}
+
+.top-logo hr {
+  margin: 20px;
+}
+
+.card-container-1 {
+  text-align: center;
+  width: 400px;
+  border: none;
+  border-radius: 60px;
+  padding: 20px;
+  background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 0%, 94%));
+  box-shadow: 0px 0px 25px hsla(0, 0%, 0%, 0.6);
+}
+
+.card-container-2 {
+  text-align: center;
+  width: 400px;
+  border: none;
+  border-radius: 60px;
+  padding: 20px;
+  background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 0%, 94%));
+  box-shadow: 0px 0px 25px hsla(0, 0%, 0%, 0.6);
+}
+
+.picture-preview {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  background: rgba(255, 255, 255, 0.1);
+  border: 4px solid rgba(233, 233, 233, 0.3);
+  border-radius: 100%;
+}
+
+.bg-color {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.bg-color input {
+  margin: 4px;
+}
+
+.card h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#nameInput {
+  font-size: 1.8rem;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 250px;
+  padding: 5px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.picture-and-tag-input,
+.url-section-input,
+.location-and-job-input {
+  margin: 20px;
+}
+
+.picture-and-tag-input p {
+  font-size: 1.1rem;
+}
+
+.picture-and-tag-input input[type="text"] {
+  font-size: 1.2rem;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 120px;
+  padding: 5px;
+  margin-top: 20px;
+}
+
+.picture-and-tag-input input[type="file"] {
+  color: rgba(255, 255, 255, 0);
+  margin: 8px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin-left: 100px;
+  margin-top: 20px;
+  margin-bottom: 21px;
+}
+
+input[type="file"]::file-selector-button {
+  display: grid;
+  position: absolute;
+  margin-top: -10px;
+  margin-left: -4px;
+  font-size: 1.2rem;
+  padding: 8px;
+  padding-left: 12px;
+  padding-right: 12px;
+  border: none;
+  border-radius: 20px;
+  background: linear-gradient(135deg, hsl(0, 0%, 95%), hsl(0, 0%, 80%));
+  cursor: pointer;
+}
+
+input[type="file"]::file-selector-button:hover {
+  background: linear-gradient(135deg, hsl(0, 0%, 85%), hsl(0, 0%, 70%));
+}
+
+input[type="file"]::file-selector-button:active {
+  background: linear-gradient(135deg, hsl(0, 0%, 75%), hsl(0, 0%, 60%));
+}
+
+.url-section-input input,
+.location-and-job-input input,
+.bio-input {
+  font-size: 1rem;
+  border: 1px solid black;
+  border-radius: 8px;
+  width: 200px;
+  padding: 3px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.bio-input {
+  margin: 25px;
+}
+
+.skills-input {
+  font-size: 1rem;
+  border: 1px solid black;
+  border-radius: 8px;
+  width: 200px;
+  padding: 3px;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+.social-icons-selection {
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+.social-icons-selection p {
+  font-size: 1.1rem;
+}
+
+.social-icons-selection span,
+.social-icons-selection input {
+  font-size: 1.2rem;
+  color: black;
+  border: none;
+  border-radius: 12px;
+  margin-top: 5px;
+  margin-bottom: 25px;
+  padding: 4px;
+}
+
+.picture-downloads {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.picture-downloads p {
+  font-size: 1.4rem;
+  margin-bottom: 6px;
+}
+
+.picture-downloads button {
+  background: linear-gradient(135deg, hsl(0, 0%, 95%), hsl(0, 0%, 80%));
+  border: none;
+  border-radius: 20px;
+  font-size: 1.4rem;
+  padding: 10px;
+  margin: 6px;
+  cursor: pointer;
+}
+
+.picture-downloads button:hover {
+  background: linear-gradient(135deg, hsl(0, 0%, 85%), hsl(0, 0%, 70%));
+}
+
+.picture-downloads button:active {
+  background: linear-gradient(135deg, hsl(0, 0%, 75%), hsl(0, 0%, 60%));
+}
+
+.card-title {
+  font-size: 2.7rem;
+  color: rgba(255, 255, 255);
+  opacity: 80%;
+  margin-bottom: 18px;
+}
+
+.tag {
+  position: relative;
+  font-size: 2rem;
+  border-radius: 8px 40px 8px 40px;
+  background: linear-gradient(135deg, hsla(0, 0%, 100%, 0.8), hsl(0, 0%, 94%));
+  opacity: 80%;
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 320px;
+  width: fit-content;
+  white-space: normal;
+  word-break: break-word;
+  box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.7);
+  margin-top: -30px;
+  margin-bottom: 25px;
+  margin-left: 20px;
+}
+
+.url-section p,
+.location-and-job p {
+  text-align: left;
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.8);
+  margin: 6px;
+  margin-left: 25px;
+}
+
+.bio {
+  font-size: 1rem;
+  color: rgba(255, 255, 255);
+  background: linear-gradient(rgba(255, 255, 255), rgba(0, 0, 0));
+  opacity: 90%;
+  border-radius: 10px;
+  margin-top: 25px;
+  padding: 12px;
+  max-width: 300px;
+  width: fit-content;
+  white-space: normal;
+  word-break: break-word;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.skills {
+  font-size: 1rem;
+  color: rgba(255, 255, 255);
+  background: linear-gradient(rgba(255, 255, 255), rgba(0, 0, 0));
+  opacity: 90%;
+  border-radius: 10px;
+  padding: 5px;
+  max-width: 250px;
+  width: fit-content;
+  white-space: normal;
+  word-break: break-word;
+  margin: 24px auto 5px auto;
+}
+
+.skills p {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 8px;
+  padding-bottom: 8px;
+}
+
+.instagram-link,
+.twitter-link,
+.youtube-link {
+  text-align: left;
+  font-size: 1.2rem;
+  margin: 6px;
+  margin-left: 25px;
+}
+
+/* .bg-color input,
+.name-color input,
+.tag-color input,
+.tag-bg-color input,
+.section-1-color input,
+.section-2-color input,
+.bio-colors-section input,
+.skills-colors-section input,
+.links-color input {
+  width: 40px;
+  height: 43px;
+  border-radius: 100%;
+  border: 2px solid rgba(0, 0, 0, 0.6);
+  background: none;
+}
+
+.bg-color input::-webkit-color-swatch,
+.name-color input::-webkit-color-swatch,
+.tag-color input::-webkit-color-swatch,
+.tag-bg-color input::-webkit-color-swatch,
+.section-1-color input::-webkit-color-swatch,
+.section-2-color input::-webkit-color-swatch,
+.bio-colors-section input::-webkit-color-swatch,
+.skills-colors-section input::-webkit-color-swatch,
+.links-color input::-webkit-color-swatch {
+  border-radius: 100%;
+  border: none;
+  background: none;
+}
+
+.bg-color input:hover,
+.name-color input:hover,
+.tag-color input:hover,
+.tag-bg-color input:hover,
+.section-1-color input:hover,
+.section-2-color input:hover,
+.bio-colors-section input:hover,
+.skills-colors-section input:hover,
+.links-color input:hover {
+  border: 2px solid rgba(0, 0, 0, 0.4);
+} */
+
+.erase {
+  font-size: 1.6rem;
+  opacity: 50%;
+  width: 40px;
+  height: 40px;
+  margin: 20px 10px 0px auto;
+  cursor: pointer;
+}
+
+.erase:hover {
+  opacity: 60%;
+}
+
+.erase:active {
+  opacity: 70%;
+}
+
+.name-color {
+  margin-bottom: 10px;
+  margin-top: -10px;
+}
+
+.tag-color-picker {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0px -7px 0px;
+}
+
+.tag-color {
+  margin-right: 10px;
+}
+
+.tag-bg-color {
+  margin-left: 10px;
+}
+
+.section-1-color,
+.section-2-color,
+.bio-colors-section,
+.skills-colors-section {
+  display: flex;
+  justify-content: center;
+  margin-top: -15px;
+  margin-bottom: 15px;
+}
+
+.links-color {
+  margin-bottom: 15px;
+  margin-top: -32px;
+}
+
+@media (max-width: 420px) {
+  .card-container-1,
+  .card-container-2 {
+    margin: 12px;
+  }
+
+  .full {
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 0px;
+  }
+
+  .card {
+    margin: 0px;
+  }
+
+  .top-logo {
+    display: none;
+  }
+}
